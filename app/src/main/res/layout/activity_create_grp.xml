@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createGrp"
+    android:orientation="vertical"
+    android:background="#EDEDED"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="10dp"
+        android:background="@color/yellow"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:id="@+id/loginWoman_img"
+            android:src="@drawable/login_woman"
+            android:transitionName="logo_img"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/bungee_regular"
+            android:text="@string/crgrptxt1"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:transitionName="logo_text"/>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn1_create"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="356dp"
+            android:background="@drawable/btnbg"
+            android:backgroundTint="@color/white"
+            android:paddingTop="10dp"
+            android:drawableTop="@drawable/handshake"
+            android:text="@string/crgrptext2"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bungee_regular"
+            android:textSize="22dp"
+            android:elevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:onClick="create"
+            />
+
+        <Button
+            android:id="@+id/btn2_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="224dp"
+            android:layout_marginTop="356dp"
+            android:background="@drawable/btnbg"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/login_icon"
+            android:elevation="4dp"
+            android:fontFamily="@font/bungee_regular"
+            android:includeFontPadding="false"
+            android:paddingTop="10dp"
+            android:text="@string/crgrptext3"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:onClick="go"/>
+
+        <TextView
+            android:id="@+id/lngselecttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="45dp"
+            android:text="@string/crgrptext4"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/engbtn" />
+
+        <Button
+            android:id="@+id/engbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="188dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/white"
+            android:text="English"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/marbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/white"
+            android:text="मराठी"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/engbtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

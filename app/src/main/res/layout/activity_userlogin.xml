@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Userlogin">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutuser"
+        android:layout_width="match_parent"
+
+        android:layout_height="425dp"
+        android:background="@drawable/background"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/groupnameuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/innerbg"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/adminnameuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupnameuser"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:text="HI "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+
+<!--        <Button-->
+<!--            android:id="@+id/viewbtnuser"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/adminnameuser"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginTop="7dp"-->
+<!--            android:background="@drawable/innerbg"-->
+<!--            android:onClick="viewinfo"-->
+<!--            android:backgroundTint="#FFA115"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="View Information"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/adminnameuser"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="7dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:background="@drawable/innerbg"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="Edit Information"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:onClick="editinfo"-->
+<!--            android:textStyle="bold" />-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/whitebg"
+            android:layout_below="@id/adminnameuser"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/innerbg">
+
+            <!--  Total Amount info            -->
+            <TextView
+                android:id="@+id/totalamtuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:text="@string/admlogtext3"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+            <!--  Investment in bachat gat    -->
+
+            <TextView
+
+                android:id="@+id/textViewuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:paddingTop="5dp"
+                android:text="₹"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/totalamtuser"
+                tools:layout_editor_absoluteY="-1dp" />
+
+            <TextView
+
+                android:id="@+id/totalamtedituser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:paddingTop="5dp"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/textViewuser"
+                tools:layout_editor_absoluteY="-1dp" />
+
+            <TextView
+                android:id="@+id/youramtuser"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/admlogtext4"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/totalamtuser" />
+
+
+            <!--  Remaining amount of bachat gat          -->
+
+            <TextView
+
+                android:id="@+id/textView2user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="11dp"
+                android:paddingTop="5dp"
+                android:text="₹"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/youramtuser"
+                app:layout_constraintTop_toBottomOf="@+id/textViewuser" />
+
+            <TextView
+                android:id="@+id/investamtedituser"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/textView2user"
+                app:layout_constraintTop_toBottomOf="@+id/totalamtedituser" />
+
+            <TextView
+
+                android:id="@+id/remamtuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/admlogtext5"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/youramtuser" />
+
+
+            <!--  Current Distributed          -->
+
+            <TextView
+                android:id="@+id/textView3user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:text="₹"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/remamtuser"
+                app:layout_constraintTop_toBottomOf="@+id/textView2user" />
+
+            <TextView
+                android:id="@+id/remamtvaluser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="15dp"
+                android:text="7,000"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/textView3user"
+                app:layout_constraintTop_toBottomOf="@+id/investamtedituser" />
+
+            <TextView
+                android:id="@+id/loanamtgivuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="16dp"
+
+                android:text="@string/admlogtext6"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/remamtuser" />
+
+            <TextView
+                android:id="@+id/textView4user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:text="₹"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/loanamtgivuser"
+                app:layout_constraintTop_toBottomOf="@+id/textView3user" />
+
+            <TextView
+                android:id="@+id/cloandisamtuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/textView4user"
+                app:layout_constraintTop_toBottomOf="@+id/remamtvaluser" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/lngselecttxtprofset1"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/whitebg"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/crgrptext4"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/whitebg"
+            app:layout_constraintVertical_bias="0.943" />
+
+        <Button
+            android:id="@+id/engbtnprofset1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/whitebg"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="@color/white"
+            android:text="English"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/marbtnprofset1"
+
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.951" />
+
+        <Button
+            android:id="@+id/marbtnprofset1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/whitebg"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/lngselecttxtprofset1"
+            android:backgroundTint="@color/white"
+            android:text="मराठी"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lngselecttxtprofset1"
+            app:layout_constraintTop_toBottomOf="@+id/whitebg"
+            app:layout_constraintVertical_bias="0.952" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnprofilesettinguser"
+        android:layout_width="150dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/btnbg"
+        android:drawableTop="@drawable/settings"
+        android:elevation="4dp"
+        android:padding="15dp"
+        android:text="@string/tretxt4"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayoutuser"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/allrecuser"
+        android:layout_width="150dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="376dp"
+        android:background="@drawable/btnbg"
+        android:drawableTop="@drawable/document"
+        android:elevation="4dp"
+        android:padding="15dp"
+        android:text="@string/tretxt3"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnbachatgatinfouser"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/btnbg"
+        android:drawableTop="@drawable/partners"
+        android:elevation="4dp"
+        android:text="@string/tretxt5"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnprofilesettinguser"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayoutuser"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberCollection">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/design"
+
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:drawableTop="@drawable/coincollecting"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/colltext1"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:id="@+id/ced"
+            android:layout_below="@id/collect"
+            android:layout_marginStart="30dp"
+            app:boxBackgroundColor="@color/white"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="#000000"
+            android:hint="@string/rmememtxt2"
+            android:layout_marginBottom="6dp"
+            app:hintTextColor="@color/black"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/username"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_alignBaseline="@id/ced"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="21dp"
+            android:backgroundTint="@color/hint"
+            android:name="spinner" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:id="@+id/collectionDate"
+            android:layout_below="@id/ced"
+            android:layout_marginStart="30dp"
+            app:boxBackgroundColor="@color/white"
+            android:layout_marginBottom="6dp"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="#000000"
+            android:hint="@string/colltext7"
+
+            app:hintTextColor="@color/black"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/calender"
+                android:inputType="text"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:id="@+id/amount"
+            android:layout_below="@id/collectionDate"
+            android:layout_marginStart="30dp"
+            app:boxBackgroundColor="@color/white"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="#000000"
+            android:hint="@string/colltext3"
+            android:layout_marginBottom="6dp"
+            app:hintTextColor="@color/black"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/ammount"
+                android:inputType="number"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:id="@+id/amountLoan"
+            android:layout_below="@id/amount"
+            android:layout_marginStart="30dp"
+            app:boxBackgroundColor="@color/white"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="#000000"
+            android:hint="@string/colltext8"
+            android:layout_marginBottom="6dp"
+            app:hintTextColor="@color/black"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/loanicon"
+                android:inputType="number"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:id="@+id/fine"
+            android:layout_below="@id/amountLoan"
+            android:layout_marginStart="30dp"
+            app:boxBackgroundColor="@color/white"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="#000000"
+            android:hint="@string/colltext4"
+            android:layout_marginBottom="15dp"
+            app:hintTextColor="@color/black"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/fine"
+                android:inputType="number"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fine"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/colltext5"
+            android:textColor="@color/black" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rec"
+            android:layout_below="@id/save"
+            android:backgroundTint="@color/white"
+            android:text="@string/colltext6"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

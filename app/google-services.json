@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "129312644921",
+    "firebase_url": "https://pblapp-sakshmaa-default-rtdb.firebaseio.com",
+    "project_id": "pblapp-sakshmaa",
+    "storage_bucket": "pblapp-sakshmaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129312644921:android:46d5fb36ece95ddcdd92e8",
+        "android_client_info": {
+          "package_name": "com.example.pblapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129312644921-dougbnl8bfbi09bhtmpu8ajr19o02i67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApk2cbHFZd2MdApnGC_jTWCoP2iaZQnI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129312644921-dougbnl8bfbi09bhtmpu8ajr19o02i67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
